@@ -1,0 +1,41 @@
+body {
+  background: yello;
+  color: black;
+  font-size: 20px;
+  margin: auto;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size:25px;
+  padding: 10px;
+}
+
+#content {
+  background: black;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+table {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px auto;
+  padding: 20px;
+  color: red;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 5px solid yellow;
+  height: 90px;
+  width: 90px;
+
+tr {
+  height: 90px;
+  width: 90px;
+}

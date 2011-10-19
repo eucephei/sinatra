@@ -1,0 +1,17 @@
+<title>Math</title>
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<p>Please enter a math expression to be evaluated; i.e. Math.cos(7)</p>
+<form method="post" action="/math" />
+  <input type="text" name="equation" />
+  <input type="submit" />
+</form>
+
+<p>
+  <% if session[:error] %>
+  	Error: <%= session[:error] %>    <%= session[:equation] %>
+  <% else %>
+ 	<%= session[:equation] %> = <%= session[:equation_eval] %> 
+  <% end %>
+</p>  

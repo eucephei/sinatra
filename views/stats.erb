@@ -1,0 +1,7 @@
+<title>Statistics</title>
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+	
+<p>Total pages viewed: <%= session[:pages] %></p>
+<p>Math problems solved: <%= session[:math] %></p>
+<p>Time since login: <%= (Time.now.to_i - session[:time].to_i) %> seconds</p>

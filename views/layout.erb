@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Sinatra Demo</title>
+ </head>
+ <body>
+   <% if authorized? %>
+  		Logged in as: <%= session[:user] %>  |
+  		<em><a href="/logout">logout</a></em> |
+		<a href="/math">math</a> | 
+		<a href="/date">date</a> |
+		<a href="/stats">stats</a> |
+		<a href="/news">news</a> |		
+		<a href="/pict">pict</a> |				
+		<a href="/tictactoe">tictactoe</a>
+   <% else %>
+		<a href="/login">login</a>  |
+   <% end %>
+   <br /> 
+   <hr>
+  
+  <%= yield %>
+ </body>
+</html>
+
